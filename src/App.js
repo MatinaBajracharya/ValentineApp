@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
   const [noPosition, setNoPosition] = useState({ top: "50%", left: "55%" });
   const [accepted, setAccepted] = useState(false);
 
@@ -16,18 +16,17 @@ function App() {
     <div className="container">
       {!accepted ? (
         <>
-          <h1>💖 Valentine Day 💖</h1>
+          <h1>💖 On the occassion of Valentine’s Day 💖</h1>
 
-          <input
+          {/* <input
             type="text"
             placeholder="Enter name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-          />
+          /> */}
 
-          {name && (
-            <h2>{name}, will you be my Valentine? 💌</h2>
-          )}
+          <h2> Salim, will you be my Valentine? 💌</h2>
+          <img src="cute.png" alt="cute.png" />
 
           <div className="buttons">
             <button className="yes" onClick={() => setAccepted(true)}>
@@ -44,7 +43,10 @@ function App() {
           </div>
         </>
       ) : (
-        <h1>🎉 Yay! Happy Valentine’s Day 💕I Love You So Much {name}!</h1>
+        <>
+          <h1>🎉 Yay! Happy Valentine’s Day 💕I Love You So Much!</h1>
+          <img src="/besos.gif" alt="Besos gif" />
+        </>
       )}
     </div>
   );
