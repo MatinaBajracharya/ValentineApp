@@ -49,5 +49,5 @@ button {
 .no {
   background-color: #555;
   color: white;
-  position: absolute;
+  /* position: absolute; */
 }
